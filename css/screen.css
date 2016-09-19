@@ -1,0 +1,757 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'TrebuchetMSBold';
+  src: url("../fonts/TrebuchetMSBold.eot");
+  src: url("../fonts/TrebuchetMSBold.eot") format("embedded-opentype"), url("../fonts/TrebuchetMSBold.woff2") format("woff2"), url("../fonts/TrebuchetMSBold.woff") format("woff"), url("../fonts/TrebuchetMSBold.ttf") format("truetype"), url("../fonts/TrebuchetMSBold.svg#TrebuchetMSBold") format("svg");
+}
+@font-face {
+  font-family: 'TrebuchetMS';
+  src: url("../fonts/TrebuchetMS.eot");
+  src: url("../fonts/TrebuchetMS.eot") format("embedded-opentype"), url("../fonts/TrebuchetMS.woff2") format("woff2"), url("../fonts/TrebuchetMS.woff") format("woff"), url("../fonts/TrebuchetMS.ttf") format("truetype"), url("../fonts/TrebuchetMS.svg#TrebuchetMS") format("svg");
+}
+/* line 28, ../sass/screen.scss */
+*:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+/* line 33, ../sass/screen.scss */
+body {
+  box-sizing: border-box;
+  font: 14px/16px 'Arial';
+}
+
+/* line 37, ../sass/screen.scss */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 38, ../sass/screen.scss */
+.wrapper {
+  position: relative;
+}
+
+/* line 41, ../sass/screen.scss */
+sub {
+  display: inline-block;
+  font: 10px/12px "Arial";
+  vertical-align: -moz-middle-with-baseline;
+}
+
+/* line 46, ../sass/screen.scss */
+header {
+  width: 100%;
+  background: #00bff3;
+  padding: 29px 0 32px;
+  position: fixed;
+  z-index: 99999;
+}
+
+/* line 53, ../sass/screen.scss */
+.container {
+  width: 1040px;
+  margin: 0 auto;
+}
+/* line 56, ../sass/screen.scss */
+.container .logo {
+  display: inline-block;
+  width: 310px;
+  vertical-align: bottom;
+}
+/* line 60, ../sass/screen.scss */
+.container .logo .logo_text {
+  display: inline-block;
+  text-align: right;
+  margin-left: 7px;
+}
+/* line 66, ../sass/screen.scss */
+.container .right_section {
+  display: inline-block;
+  margin-left: 180px;
+}
+/* line 69, ../sass/screen.scss */
+.container .right_section .number {
+  display: inline-block;
+  font: 30px/32px 'Arial';
+  color: #fff;
+  vertical-align: middle;
+}
+/* line 75, ../sass/screen.scss */
+.container .right_section .call_back {
+  color: #fff;
+  cursor: pointer;
+  border-bottom: dotted;
+  display: inline-block;
+  margin-left: 30px;
+}
+/* line 82, ../sass/screen.scss */
+.container .right_section .social_icons {
+  display: inline-block;
+  margin-left: 60px;
+  vertical-align: middle;
+}
+/* line 86, ../sass/screen.scss */
+.container .right_section .social_icons .icon {
+  width: 31px;
+  height: 31px;
+  display: inline-block;
+  margin-left: 10px;
+}
+/* line 92, ../sass/screen.scss */
+.container .right_section .social_icons .fb {
+  background: url(../img/social-icons.png);
+}
+/* line 95, ../sass/screen.scss */
+.container .right_section .social_icons .google {
+  background: url(../img/social-icons.png) -41px 0;
+}
+/* line 98, ../sass/screen.scss */
+.container .right_section .social_icons .instagram {
+  background: url(../img/social-icons.png) -82px 0;
+}
+
+/* line 104, ../sass/screen.scss */
+.first_hotel {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  min-height: 655px;
+  background: url(../img/bg-2.png) no-repeat 104% 101%, url(../img/main-bg.jpg) no-repeat;
+  z-index: -1;
+}
+/* line 111, ../sass/screen.scss */
+.first_hotel .tour_code {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background: rgba(243, 255, 0, 0.8);
+  bottom: 5%;
+  left: 5%;
+  text-align: center;
+}
+/* line 120, ../sass/screen.scss */
+.first_hotel .tour_code span {
+  text-align: center;
+  display: inline-block;
+  font: 25px/30px 'TrebuchetMSBold';
+  margin: 30px 0 0;
+}
+/* line 126, ../sass/screen.scss */
+.first_hotel .tour_code h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font: 14px/16px 'TrebuchetMSBold';
+  margin: 15px 0 5px;
+}
+/* line 132, ../sass/screen.scss */
+.first_hotel .tour_code div {
+  font: 24px/26px 'TrebuchetMSBold';
+  color: #fff;
+  background: #000;
+  display: inline-block;
+  padding: 5px 4px;
+  border-radius: 3px;
+}
+
+/* line 142, ../sass/screen.scss */
+.hotel_info {
+  width: 100%;
+  position: relative;
+}
+/* line 145, ../sass/screen.scss */
+.hotel_info .aquamarine_hotel {
+  display: inline-block;
+  padding: 25px 0 20px;
+}
+/* line 148, ../sass/screen.scss */
+.hotel_info .aquamarine_hotel .hotel_name, .hotel_info .aquamarine_hotel .price {
+  display: inline-block;
+  color: #000;
+  font: 35px/37px 'TrebuchetMSBold';
+  border-bottom: 1px solid #fff;
+}
+/* line 153, ../sass/screen.scss */
+.hotel_info .aquamarine_hotel .hotel_name:hover, .hotel_info .aquamarine_hotel .price:hover {
+  border-bottom: 1px solid #7f7f7f;
+}
+/* line 157, ../sass/screen.scss */
+.hotel_info .aquamarine_hotel img {
+  margin: 0 30px;
+}
+/* line 161, ../sass/screen.scss */
+.hotel_info .aquamarine_hotel .price:hover {
+  border-bottom: none;
+}
+/* line 165, ../sass/screen.scss */
+.hotel_info .aquamarine_hotel .marks {
+  margin: 20px 0 0;
+}
+/* line 167, ../sass/screen.scss */
+.hotel_info .aquamarine_hotel .marks a {
+  display: inline-block;
+  color: #000;
+}
+/* line 171, ../sass/screen.scss */
+.hotel_info .aquamarine_hotel .marks ul {
+  display: inline-block;
+  text-align: left;
+}
+/* line 175, ../sass/screen.scss */
+.hotel_info .aquamarine_hotel .marks li {
+  display: inline-block;
+  color: #000;
+  font: 700 18px/20px 'Arial';
+  text-align: left;
+  margin-right: 19px;
+}
+/* line 182, ../sass/screen.scss */
+.hotel_info .aquamarine_hotel .marks li:first-child {
+  font: 24px/26px 'TrebuchetMSBold';
+  background: #00bff3;
+  padding: 14px 7px;
+  color: #fff;
+  border-radius: 2px;
+  margin: 0 33px 0 27px;
+  vertical-align: top;
+}
+/* line 191, ../sass/screen.scss */
+.hotel_info .aquamarine_hotel .marks li:last-child {
+  margin-right: 0;
+}
+/* line 194, ../sass/screen.scss */
+.hotel_info .aquamarine_hotel .marks li .gray {
+  color: #7f7f7f;
+  font: 700 12px/14px 'Arial';
+  text-transform: uppercase;
+}
+/* line 200, ../sass/screen.scss */
+.hotel_info .aquamarine_hotel .marks .feedback {
+  font: 700 14px/18px 'Arial';
+  padding: 2px;
+}
+/* line 203, ../sass/screen.scss */
+.hotel_info .aquamarine_hotel .marks .feedback .feedback_gray {
+  color: #7f7f7f;
+}
+/* line 206, ../sass/screen.scss */
+.hotel_info .aquamarine_hotel .marks .feedback:hover {
+  /*box-shadow: 0 0 8px 1px $color_gray;*/
+  transition: 1s;
+  padding: 2px;
+  background: #00bff3;
+  border-radius: 2px;
+  color: #fff;
+}
+/* line 217, ../sass/screen.scss */
+.hotel_info .sunny_days {
+  display: inline-block;
+  position: absolute;
+  right: 8%;
+  top: -20%;
+}
+/* line 222, ../sass/screen.scss */
+.hotel_info .sunny_days h1 {
+  font: 100px/92px 'TrebuchetMS';
+  color: #7f7f7f;
+}
+/* line 226, ../sass/screen.scss */
+.hotel_info .sunny_days span {
+  font: 30px/30px 'Arial';
+}
+
+/* line 231, ../sass/screen.scss */
+.entertainment {
+  width: 100%;
+}
+/* line 233, ../sass/screen.scss */
+.entertainment .variant_wrapper {
+  display: inline-block;
+  width: 48%;
+}
+/* line 236, ../sass/screen.scss */
+.entertainment .variant_wrapper:hover .first_slogan {
+  border-bottom: 1px solid #7f7f7f;
+}
+/* line 239, ../sass/screen.scss */
+.entertainment .variant_wrapper .extreme_route {
+  width: 100%;
+  min-height: 280px;
+  display: inline-block;
+  background: url(../img/variant_1.jpg) 0 55%;
+}
+/* line 246, ../sass/screen.scss */
+.entertainment .variant_wrapper .roupdzhamping {
+  width: 100%;
+  min-height: 280px;
+  display: inline-block;
+  background: url(../img/variant_2.jpg) 0 55%;
+}
+/* line 252, ../sass/screen.scss */
+.entertainment .variant_wrapper .entertainment_text {
+  position: relative;
+}
+/* line 254, ../sass/screen.scss */
+.entertainment .variant_wrapper .entertainment_text a {
+  font: 30px/32px 'TrebuchetMSBold';
+  color: #000;
+  display: inline-block;
+  border-bottom: 1px solid #fff;
+  margin-top: 15px;
+}
+/* line 260, ../sass/screen.scss */
+.entertainment .variant_wrapper .entertainment_text a:hover {
+  border-bottom: 1px solid #7f7f7f;
+}
+/* line 264, ../sass/screen.scss */
+.entertainment .variant_wrapper .entertainment_text h2 {
+  float: right;
+  display: inline-block;
+  font: 50px/52px 'TrebuchetMSBold';
+}
+/* line 269, ../sass/screen.scss */
+.entertainment .variant_wrapper .entertainment_text span {
+  display: block;
+  color: #7f7f7f;
+  margin-top: 5px;
+  float: left;
+}
+/* line 275, ../sass/screen.scss */
+.entertainment .variant_wrapper .entertainment_text .falls_price {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #7f7f7f;
+}
+/* line 281, ../sass/screen.scss */
+.entertainment .variant_wrapper .entertainment_text .falls_price:after {
+  background: red none repeat scroll 0 0;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  left: -3px;
+  position: absolute;
+  top: 7px;
+  width: 30px;
+}
+/* line 294, ../sass/screen.scss */
+.entertainment .variant_wrapper_2 {
+  float: right;
+}
+/* line 296, ../sass/screen.scss */
+.entertainment .variant_wrapper_2:hover .second_slogan {
+  border-bottom: 1px solid #7f7f7f;
+}
+
+/* line 301, ../sass/screen.scss */
+.item_wrapper {
+  margin-top: 65px;
+}
+/* line 303, ../sass/screen.scss */
+.item_wrapper h2 {
+  font: 50px/52px 'TrebuchetMSBold';
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+/* line 310, ../sass/screen.scss */
+.item_wrapper .item, .item_wrapper .iside {
+  display: inline-block;
+}
+/* line 313, ../sass/screen.scss */
+.item_wrapper .item {
+  width: 75%;
+}
+/* line 317, ../sass/screen.scss */
+.item_wrapper .item p:nth-child(1) {
+  font: 700 16px/18px 'Arial';
+  letter-spacing: 0.5px;
+  margin-top: 25px;
+}
+/* line 322, ../sass/screen.scss */
+.item_wrapper .item p:nth-child(2) {
+  font: 14px/16px 'Arial';
+  letter-spacing: 0;
+  word-spacing: -1px;
+  margin-top: 25px;
+}
+/* line 329, ../sass/screen.scss */
+.item_wrapper .item h3 {
+  font: 700 22px/24px 'Arial';
+  margin: 20px 0 10px;
+}
+/* line 333, ../sass/screen.scss */
+.item_wrapper .item .with_spacing {
+  word-spacing: 1px;
+}
+/* line 336, ../sass/screen.scss */
+.item_wrapper .item blockquote {
+  margin: 20px 0 15px 25px;
+  padding: 15px 10px 20px 10px;
+  background: #f0fbfe;
+  font: 14px/20px 'Arial';
+  border-left: 3px solid #33ccf5;
+}
+/* line 343, ../sass/screen.scss */
+.item_wrapper .item .answer {
+  word-spacing: -1px;
+}
+/* line 346, ../sass/screen.scss */
+.item_wrapper .item h4 {
+  font: 700 16px/18px 'Arial';
+  margin: 25px 0 7px;
+}
+/* line 350, ../sass/screen.scss */
+.item_wrapper .item .last {
+  margin: 25px 0 17px;
+}
+/* line 353, ../sass/screen.scss */
+.item_wrapper .item table {
+  width: 98%;
+  margin: 30px 0;
+}
+/* line 356, ../sass/screen.scss */
+.item_wrapper .item table th {
+  font-weight: bold;
+}
+/* line 359, ../sass/screen.scss */
+.item_wrapper .item table thead {
+  border-radius: 3px 3px 0 0;
+}
+/* line 361, ../sass/screen.scss */
+.item_wrapper .item table thead th {
+  font-weight: bold;
+  /*padding: 12px 15px 7px 9px;*/
+}
+/* line 365, ../sass/screen.scss */
+.item_wrapper .item table thead .border {
+  display: inline-block;
+}
+/* line 369, ../sass/screen.scss */
+.item_wrapper .item table tr {
+  border-bottom: 1px solid #ebebeb;
+}
+/* line 371, ../sass/screen.scss */
+.item_wrapper .item table tr div {
+  border-top: 1px solid #fff;
+  padding: 12px 15px 7px 9px;
+  background: #ebebeb;
+  border-bottom: 1px solid #777777;
+}
+/* line 377, ../sass/screen.scss */
+.item_wrapper .item table tr .right {
+  text-align: right;
+}
+/* line 380, ../sass/screen.scss */
+.item_wrapper .item table tr:last-child {
+  border: none;
+}
+/* line 383, ../sass/screen.scss */
+.item_wrapper .item table tr .border_1 {
+  border-radius: 3px 0 0 0;
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+/* line 388, ../sass/screen.scss */
+.item_wrapper .item table tr .border_2 {
+  border-radius: 0 3px 0 0;
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+/* line 395, ../sass/screen.scss */
+.item_wrapper .item table td {
+  padding: 10px 8px 5px 14px;
+}
+/* line 399, ../sass/screen.scss */
+.item_wrapper .item ul {
+  padding-left: 10px;
+  margin-bottom: 45px;
+}
+/* line 402, ../sass/screen.scss */
+.item_wrapper .item ul li {
+  margin-top: 15px;
+}
+/* line 407, ../sass/screen.scss */
+.item_wrapper .aside {
+  width: 20%;
+  display: inline-block;
+  float: right;
+  padding-top: 210px;
+}
+/* line 412, ../sass/screen.scss */
+.item_wrapper .aside h2 {
+  font: 100px/102px 'TrebuchetMS';
+  display: inline-block;
+  color: #777;
+}
+/* line 417, ../sass/screen.scss */
+.item_wrapper .aside h3 {
+  font: 30px/32px 'TrebuchetMS';
+  margin: 5px 0 20px;
+}
+/* line 421, ../sass/screen.scss */
+.item_wrapper .aside p {
+  font: 20px/22px 'TrebuchetMS';
+  color: #777;
+  display: inline-block;
+}
+
+/* line 428, ../sass/screen.scss */
+footer {
+  width: 100%;
+  border-top: 1px solid #777;
+  padding: 9px 0 30px;
+}
+/* line 432, ../sass/screen.scss */
+footer p {
+  font: 12px/14px 'Arial';
+  display: inline-block;
+}
+/* line 435, ../sass/screen.scss */
+footer p a {
+  color: #00a2ff;
+  text-decoration: underline;
+}
+/* line 440, ../sass/screen.scss */
+footer .social_icons_2 {
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+}
+/* line 444, ../sass/screen.scss */
+footer .social_icons_2 .icon {
+  width: 31px;
+  height: 31px;
+  display: inline-block;
+  margin-left: 10px;
+}
+/* line 450, ../sass/screen.scss */
+footer .social_icons_2 .fb_2 {
+  background: url(../img/social-icons-footer.png);
+}
+/* line 453, ../sass/screen.scss */
+footer .social_icons_2 .google_2 {
+  background: url(../img/social-icons-footer.png) -41px 0;
+}
+/* line 456, ../sass/screen.scss */
+footer .social_icons_2 .instagram_2 {
+  background: url(../img/social-icons-footer.png) -82px 0;
+}
+
+/* line 461, ../sass/screen.scss */
+.hiden_window {
+  display: none;
+  width: 30%;
+  position: absolute;
+  top: 200%;
+  left: 34%;
+  text-align: center;
+  background: rgba(0, 191, 243, 0.9);
+  padding: 40px 0;
+  border-radius: 25px;
+  color: #fff;
+}
+/* line 476, ../sass/screen.scss */
+.hiden_window .close {
+  background: none;
+  height: 20px;
+  position: relative;
+  right: -88%;
+  top: -25px;
+  width: 20px;
+}
+/* line 486, ../sass/screen.scss */
+.hiden_window .close:hover {
+  cursor: pointer;
+}
+/* line 489, ../sass/screen.scss */
+.hiden_window .close:before {
+  background: #fff none repeat scroll 0 0;
+  content: "";
+  display: block;
+  height: 25px;
+  position: absolute;
+  right: 9px;
+  top: -2px;
+  transform: rotate(45deg);
+  width: 2px;
+}
+/* line 500, ../sass/screen.scss */
+.hiden_window .close:after {
+  background: #fff none repeat scroll 0 0;
+  content: "";
+  display: block;
+  height: 25px;
+  position: absolute;
+  right: 9px;
+  top: -2px;
+  transform: rotate(-45deg);
+  width: 2px;
+}
+/* line 512, ../sass/screen.scss */
+.hiden_window .window {
+  display: inline-block;
+  word-wrap: break-word;
+  width: 100%;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+/* line 519, ../sass/screen.scss */
+.hiden_window .window h2 {
+  font: 1.4em/1.5em 'TrebuchetMSBold';
+  margin-bottom: 20px;
+  padding: 0 15px;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  word-wrap: break-word;
+}
+/* line 543, ../sass/screen.scss */
+.hiden_window .window .info input {
+  font-size: 20px;
+  height: 22px;
+  width: 90%;
+  text-align: center;
+  padding: 5px;
+  border-radius: 8px;
+  border-color: #fff;
+  margin-top: 10px;
+}
+/* line 562, ../sass/screen.scss */
+.hiden_window .window .login input {
+  font: 18px/20px "TrebuchetMS";
+  height: 32px;
+  margin-top: 40px;
+  border-radius: 8px;
+  background: #fff;
+  border-color: #fff;
+}
+@media (max-width: 600px) {
+  /* line 461, ../sass/screen.scss */
+  .hiden_window {
+    left: 28%;
+    width: 45%;
+  }
+  /* line 476, ../sass/screen.scss */
+  .hiden_window .close {
+    right: -80%;
+  }
+  .hiden_window .window h2 {
+    font: 1em/1.1em "TrebuchetMSBold";
+    hyphens: auto;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    word-wrap: break-word;
+  }
+  /* line 543, ../sass/screen.scss */
+  .hiden_window .window .info input {
+    font-size: 12px;
+    width: 65%;
+  }
+    /* line 562, ../sass/screen.scss */
+  .hiden_window .window .login input {
+    font-size: 12px;
+    width: 70%;
+  }
+}
+
+@media (max-width: 510px) {
+  /* line 562, ../sass/screen.scss */
+  .hiden_window .window .login input {
+    font-size: 10px;
+    width: 85%;
+  }
+}
+@media (max-width: 500px) {
+  /* line 543, ../sass/screen.scss */
+  .hiden_window .window .info input {
+    font: 0.7em/0.8em "TrebuchetMSBold";
+  }
+}
+
+@media (max-width: 400px) {
+  /* line 519, ../sass/screen.scss */
+  .hiden_window .window h2 {
+    font: 0.8em/0.9em "TrebuchetMSBold";
+    hyphens: auto;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    word-wrap: break-word;
+  }
+}
+
+
+
